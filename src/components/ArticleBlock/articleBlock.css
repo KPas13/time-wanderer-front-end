@@ -1,0 +1,46 @@
+.article-block-wrapper{
+    width: 1200px;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.article-block{
+    display: flex;
+    align-items: center;
+
+    border: 4px solid #674188;
+    border-left: none;
+
+    height: 210px;
+}
+
+.article-img{
+    width: 250px;
+    height: 250px;
+}
+
+.article-block-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-left: 10px;
+}
+
+.article-block-title{
+    font-family: "Old Standard TT", serif;
+    font-size: 24px;
+    color: #674188;
+}
+
+.article-block-description{
+    font-size: 16px;
+    font-family: "Passenger Sans", sans-serif;
+    color: #021526;
+
+    width: 855px;
+}

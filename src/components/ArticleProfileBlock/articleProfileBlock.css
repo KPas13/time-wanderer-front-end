@@ -1,0 +1,12 @@
+.article-profile-block-wrapper {
+    width: 1400px;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.article-profile-block-info {
+
+}

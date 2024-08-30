@@ -1,0 +1,24 @@
+.circle-image-wrapper {
+    width: 150px;
+    height: 150px;
+}
+
+.circle-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.circle-image-nick {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: "Old Standard TT", serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #674188;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,90 @@
+body{
+    background-color: #EBEBEB;
+}
+
+.register-page-wrapper{
+    width: 1400px;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-page-logo{
+    font-family: 'Sangha', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.register-page-purple{
+    color: #B692C2;
+}
+
+.register-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: white;
+
+    width: 1400px;
+    height: 700px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    margin-bottom: 40px;
+}
+
+.register-page-right{
+    display: flex;
+
+    background-image: url("/public/assets/images/sign-up-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 700px;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.register-page-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 700px;
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.register-page-input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sign-in-text {
+    color: #B692C2;
+}
+
+.sign-in-text:hover {
+    color: #674188;
+}
+
+.register-error {
+    text-align: center;
+    color: #ab2121;
+}
+
+

@@ -1,0 +1,51 @@
+.category-grid-wrapper {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*----- First Row -----*/
+
+.category-grid-start-row {
+    display: flex;
+    gap: 15px;
+}
+
+/*----- Vertical Elements -----*/
+
+.category-grid-long-vertical-element {}
+
+.category-grid-long-vertical-element-end {}
+
+
+/*----- Short Elements -----*/
+
+.category-grid-first-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category-grid-long-horizontal-element {}
+
+.category-grid-two-short-horizontal-element {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/*----- Second Row -----*/
+
+.category-grid-second-row {
+    display: flex;
+    gap: 15px;
+}

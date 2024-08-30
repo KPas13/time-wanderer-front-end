@@ -1,0 +1,46 @@
+body {
+    background-color: #EBEBEB;
+}
+
+.error-page-content{
+    width: 1400px;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    margin-top: 20px;
+}
+
+.error-page-logo{}
+
+.error-page-title{
+    font-family: 'Sangha', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+}
+
+.error-page-purple{
+    color: #B692C2;
+}
+
+.error-page-content{
+    background-color: #fff;
+
+}
+
+.error-page-text{
+    font-size: 40px;
+}
+
+.error-page-404{}
+

@@ -1,0 +1,75 @@
+.profileImage {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-image {
+    transition: ease-out 0.5s;
+}
+
+.gradient-image:hover {
+    position: relative;
+    transform: translate(15px, -12px);
+}
+
+.profile-picture-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-image-frame {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border: 6px solid #674188;
+    z-index: -1;
+}
+
+.profile-image-level {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border: 2px solid #021526;
+    z-index: 2;
+    top: 170px;
+    left: -10px;
+}
+
+.profile-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'PassengerSans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profile-nickname {
+    font-family: "Old Standard TT", serif;
+    font-size: 20px;
+    color: #674188;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px; /* Отступ сверху для визуального контроля */
+}

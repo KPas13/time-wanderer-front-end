@@ -1,0 +1,13 @@
+.leaderboard-page-wrapper {
+    width: 1400px;
+    padding: 15px;
+}
+
+.leaderboard-page-title {
+    font-family: "Old Standard TT", serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #674188;
+    text-transform: uppercase;
+    text-align: center;
+}

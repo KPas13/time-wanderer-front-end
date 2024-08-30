@@ -1,0 +1,21 @@
+.selector-catalog-wrapper {
+    width: 200px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.selector-catalog-type {
+    width: 100%;
+    height: auto;
+    padding: 8px 12px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #674188;
+    outline: none;
+
+    color: rgba(2, 21, 38, 0.8);
+    font-family: "Old Standard TT", serif;
+}

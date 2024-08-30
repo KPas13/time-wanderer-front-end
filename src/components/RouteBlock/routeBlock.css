@@ -1,0 +1,39 @@
+.route-wrapper{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.route-block-wrapper{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.route-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.route-h3{
+    font-family: "Old Standard TT", serif;
+    font-size: 24px;
+    color: #674188;
+}
+
+.route-p{
+    font-size: 16px;
+    font-family: "Passenger Sans", sans-serif;
+    color: #021526;
+
+    width: 500px;
+}
+
+.route-highlight{
+    color: #674188;
+    font-weight: bold;
+}
+

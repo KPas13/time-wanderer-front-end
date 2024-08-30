@@ -1,0 +1,54 @@
+.middle-horizontal-element-wrapper {
+    width: 415px;
+    height: 150px;
+
+    font-family: 'Sangha', sans-serif;
+    color: #ffffff;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.middle-horizontal-element-grad-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.middle-horizontal-element-grad {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(2,21,38,0.8492530801383054) 100%);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.middle-horizontal-element-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.middle-horizontal-element-text-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.middle-horizontal-element-text {
+    font-size: 18px;
+    padding: 10px;
+}

@@ -1,0 +1,27 @@
+.select-type-container {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-type {
+    width: 100%;
+    height: auto;
+
+    padding: 8px 12px;
+
+    background-color: #D9D9D9;
+    border-radius: 10px;
+
+    border: none;
+    outline: none;
+
+    color: rgba(2, 21, 38, 0.5);
+    font-family: "Old Standard TT", serif;
+
+
+}

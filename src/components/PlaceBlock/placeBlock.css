@@ -1,0 +1,35 @@
+.place-block-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.place-block {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-block-image {}
+
+.place-block-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.place-block-title {
+    font-family: "Old Standard TT", serif;
+    font-size: 24px;
+    color: #674188;
+}
+
+.place-block-description {
+    font-size: 16px;
+    font-family: "Passenger Sans", sans-serif;
+    color: #021526;
+
+    width: 750px;
+}

@@ -1,0 +1,37 @@
+.search-bar-catalog-wrapper {
+    width: 250px;
+    height: auto;
+
+    display: flex;
+
+}
+
+.search-bar-catalog {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+
+    background-color: #ffffff;
+    border: 2px solid #674188;
+    border-radius: 10px;
+}
+
+.search-bar-catalog-input {
+    width: calc(100% - 30px);
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #021526;
+    font-family: "Old Standard TT", serif;
+}
+
+.search-bar-catalog-input::placeholder {
+    color: rgba(2, 21, 38, 0.8);
+}
+
+.search-bar-catalog-img {
+    width: 15px;
+    height: 15px;
+}

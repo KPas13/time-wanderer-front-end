@@ -1,0 +1,96 @@
+.footer-wrapper{
+    margin-top: 50px;
+    width: 1400px;
+    height: 270px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0;
+
+    border-top: 2px solid rgba(2, 21, 38, 0.5);
+}
+
+.footer-links{
+    display: flex;
+    gap: 50px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-text{
+    font-family: 'Sangha', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.logo-purple-text{
+    color: #B692C2;
+}
+
+.text-copyright {
+
+}
+
+.socials{
+    display: flex;
+    gap: 13px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-heading {
+    font-family: "Old Standard TT", serif;
+    color: #674188;
+}
+
+.footer-acc-social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-circle{
+    border-radius: 50%;
+    background-color: #674188;
+    width: 5px;
+    height: 5px;
+}
+
+.footer-letter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.policy{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #021526;
+    font-family: 'PassengerSans', sans-serif;
+}
+
+.policy-links {
+    text-decoration: none;
+    color: #021526;
+    font-family: 'PassengerSans', sans-serif;
+}

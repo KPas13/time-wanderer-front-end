@@ -1,0 +1,19 @@
+.classic-btn{
+    padding: 8px 16px;
+
+    border: 3px solid #674188;
+
+    font-family: "Old Standard TT", serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #674188;
+    background-color: transparent;
+
+    transition: ease-in 0.2s;
+}
+
+.classic-btn:hover {
+    color: #fff;
+    background-color: #674188;
+}

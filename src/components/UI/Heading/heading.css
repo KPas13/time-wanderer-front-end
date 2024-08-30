@@ -1,0 +1,15 @@
+.heading-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.heading {
+    font-family: "Old Standard TT", serif;
+    font-weight: bold;
+    color: #021526;
+    text-transform: uppercase;
+}
+

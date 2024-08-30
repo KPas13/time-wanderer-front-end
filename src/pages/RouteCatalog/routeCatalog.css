@@ -1,0 +1,26 @@
+.route-catalog-wrapper {
+    width: 1400px;
+    padding: 15px;
+}
+
+.route-catalog-search-select {
+    display: flex;
+    gap: 15px;
+}
+
+.route-catalog-grid {
+    margin-top: 20px;
+}
+
+.route-catalog-divider {
+    border: 1px solid #674188;
+    margin-top: 35px;
+}
+
+.routes-catalog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,13 @@
+.input-edit-profile-wrapper {}
+
+.input-edit-profile {
+    width: 250px;
+    height: 20px;
+    border: 2px solid #674188;
+    border-radius: 10px;
+    padding: 10px;
+
+    font-family: "Old Standard TT", serif;
+    outline: none;
+
+}

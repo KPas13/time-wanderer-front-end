@@ -1,0 +1,35 @@
+.header-wrapper{
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px
+}
+
+.logo-text-header{
+    font-family: 'Sangha', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.logo-purple-text-header {
+    color: #B692C2;
+}
+
+.header-navigation{
+    display: flex;
+    gap: 20px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #021526;
+    font-family: 'PassengerSans', sans-serif;
+}
+
+.header-link:hover{
+    color: #B692C2;
+}

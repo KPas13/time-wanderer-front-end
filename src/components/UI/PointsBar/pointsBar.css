@@ -1,0 +1,35 @@
+.points-bar-wrapper {
+    width: 350px;
+    height: 20px;
+
+    border: 2px solid #674188;
+    background-color: white;
+
+    color: #674188;
+    font-family: "Old Standard TT", serif;
+    font-weight: normal;
+}
+
+.points-bar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.points-bar-fill {
+    background-color: #B692C2;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.text-points {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    color: #674188;
+    font-size: 14px;
+}

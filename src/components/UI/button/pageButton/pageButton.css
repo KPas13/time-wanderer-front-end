@@ -1,0 +1,27 @@
+.pageButton{
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid #B692C2;
+    border-radius: 10px;
+
+    background-color: transparent;
+
+    font-family: "Old Standard TT", serif;
+    font-size: 18px;
+
+}
+
+.pageButton-active {
+    background-color: #B692C2;
+    color: white;
+
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid #B692C2;
+    border-radius: 10px;
+
+    font-family: "Old Standard TT", serif;
+    font-size: 18px;
+}

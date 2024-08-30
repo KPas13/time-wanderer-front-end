@@ -1,0 +1,144 @@
+body {
+    background-color: #EBEBEB;
+}
+
+.login-page-wrapper {
+    width: 1400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.login-page-logo {
+    font-family: 'Sangha', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.login-logo-purple {
+    color: #B692C2;
+}
+
+.login-page-content {
+    display: flex;
+    gap: 25px;
+    width: 1400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+
+
+.login-page-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    padding: 0;
+}
+
+.login-page-google-or {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-or-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    font-family: "Old Standard TT", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #674188;
+}
+
+.divider {
+    background-color: #021526;
+    border: 0.5px #021526 solid;
+    width: 150px;
+}
+
+.login-or-text::before,
+.login-or-text::after {
+    content: '';
+    flex: 0.1;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+}
+
+.login-inputs-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Passenger Sans", sans-serif;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Отступ между "Forgot password?" и полем ввода пароля */
+}
+
+.login-password-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.login-page-forgot {
+    font-size: 14px; /* Настройте размер шрифта по необходимости */
+}
+
+.sign-in-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-button {}
+
+.sign-up-purple {
+    color: #B692C2;
+}
+
+.sign-up-purple:hover {
+    color: #674188;
+    cursor: pointer;
+}
+
+.login-page-right {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/public/assets/images/log-in-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 700px;
+    border-radius: 0 20px 20px 0;
+}
+
+.link-sign-up {
+
+}
+
+.login-error {
+    text-align: center;
+    color: #ab2121;
+}

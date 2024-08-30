@@ -1,0 +1,61 @@
+.friends-block-wrapper {
+    width: 1400px;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-block-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-family: "Old Standard TT", serif;
+}
+
+.friend-list-link {
+    color: #021526;
+    font-family: "Old Standard TT", serif;
+}
+
+.friend-block-lists {
+    width: 1220px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px auto 0;
+}
+
+.friend-block-profile-image-wrapper {
+    width: calc(25% - 10px); /* Уменьшите ширину, чтобы учесть уменьшение отступов */
+    min-width: 150px;
+    margin-bottom: 40px;
+}
+
+.friend-block-profile-image {
+    width: 150px;
+    height: 150px;
+}
+
+.friend-list-link {
+    display: flex;
+    color: #021526;
+    font-family: "Old Standard TT", serif;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.friend-list-link.active {
+    color: #674188;
+    font-weight: bold;
+}
+
+.friend-list-link:hover {
+    background-color: #f0f0f0;
+}

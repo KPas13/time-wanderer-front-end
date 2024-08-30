@@ -1,0 +1,43 @@
+.wrapper{
+    margin-top: 30px;
+    width: 250px;
+    height: 320px;
+}
+
+.grad-img {
+    transition: ease-out 0.5s;
+    z-index: 2;
+}
+
+.grad-img:hover {
+    transform: translate(21px, -20px);
+}
+
+
+.gradient {
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(2,21,38,0.8492530801383054) 100%);
+    z-index: 2;
+}
+
+
+.img {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+
+.frame{
+    position: relative;
+    top: -350px;
+    left: 15px;
+    width: 250px;
+    height: 320px;;
+    border: 6px solid #674188;
+    z-index: -1;
+}

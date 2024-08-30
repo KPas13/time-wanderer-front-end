@@ -1,0 +1,33 @@
+.achievement-profile-block-wrapper {
+    width: 1400px;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-profile-block-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.achievement-profile-block-info {
+    width: 1220px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+}
+
+.achievement-block {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+}

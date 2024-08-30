@@ -1,0 +1,11 @@
+.category-article-grid-wrapper {
+    width: 1400px;
+    margin-top: 10px;
+}
+
+.category-article-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

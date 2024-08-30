@@ -1,0 +1,25 @@
+.place-catalog-wrapper {
+    width: 1400px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.place-catalog-search-selector {
+    display: flex;
+    gap: 20px;
+}
+
+.place-catalog-grid {
+    margin-top: 20px;
+}
+
+.place-catalog-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    border: 1px solid rgba(2, 21, 38, 0.5);
+
+    margin-top: 20px;
+}

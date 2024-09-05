@@ -8,11 +8,13 @@ import {profile} from "../../actions/user";
 const Layout = () => {
 
     const [nickname,setNickname] = React.useState("");
+    const [avatar,setAvatar] = React.useState("");
     useEffect(()=>{
         const fetchNickname = async () => {
             try{
                 const profileInfo = await profile(localStorage.getItem("token"));
                 setNickname(profileInfo.nickname);
+                setAvatar(profileInfo.avatar);
             }catch(e){
                 alert(e);
             }
@@ -22,7 +24,7 @@ const Layout = () => {
 
     return (
         <div>
-            {localStorage.getItem("token") ? (<AuthHeader nickname={nickname}/>) : (<Header/>)}
+            {localStorage.getItem("token") ? (<AuthHeader nickname={nickname} src={avatar}/>) : (<Header/>)}
             <Outlet/>
             <Footer/>
         </div>

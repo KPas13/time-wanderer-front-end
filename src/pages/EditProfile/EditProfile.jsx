@@ -10,7 +10,7 @@ import ModalWindow from "../../components/UI/modalWindow/ModalWindow";
 
 const EditProfile = () => {
 
-    const [image, setImage] = useState('');
+    const [avatar, setAvatar] = useState('');
     const [originalProfile, setOriginalProfile] = useState({});
     const [nickname, setNickname] = useState('');
     const [name, setName] = useState('');
@@ -28,6 +28,7 @@ const EditProfile = () => {
                 setNickname(profileInfo.nickname);
                 setName(profileInfo.name);
                 setSurname(profileInfo.surname);
+                setAvatar(profileInfo.avatar);
                 // setCurrentPassword(profileInfo.password);
             } catch (e) {
                 alert(e);
@@ -77,7 +78,7 @@ const EditProfile = () => {
             <div className='edit-profile-block'>
                 <div className='edit-profile-avatar'>
                     <span className='edit-profile-span'>Avatar</span>
-                    <img className='edit-profile-image' src='/assets/images/lviv.jpg' alt='#'/>
+                    <img className='edit-profile-image' src={avatar} alt='#'/>
                 </div>
                 <div className='edit-profile-nickname'>
                     <span className='edit-profile-span'>Nickname</span>

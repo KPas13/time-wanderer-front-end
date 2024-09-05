@@ -16,6 +16,7 @@ const ProfilePage = () => {
     const [nickname, setNickname] = useState('');
     const [level, setLevel] = useState(0);
     const [rate, setRate] = useState(0);
+    const [avatar, setAvatar] = useState('');
 
 
     useEffect(  () => {
@@ -25,7 +26,8 @@ const ProfilePage = () => {
                 setNickname(profileInfo.nickname);
                 setLevel(profileInfo.level);
                 setRate(profileInfo.rate);
-                console.log(profileInfo.nickname, profileInfo.level, profileInfo.rate);
+                setAvatar(profileInfo.avatar);
+                console.log(profileInfo.nickname, profileInfo.level, profileInfo.rate, profileInfo.avatar);
             } catch (e) {
                 console.log(e);
             }
@@ -72,7 +74,7 @@ const ProfilePage = () => {
                         >
                             Achievements
                         </a>
-                        <ProfileImage src='/assets/images/log-in-image.jpg' nickname={nickname} level={level}/>
+                        <ProfileImage src={avatar} nickname={nickname} level={level}/>
                     </div>
                     <a
                         href="#"

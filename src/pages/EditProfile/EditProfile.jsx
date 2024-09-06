@@ -21,7 +21,6 @@ const EditProfile = () => {
     const [modalVisible, setModalVisible] = useState(false)
     const [file, setFile] = useState(null);
     const [uploadStatus, setUploadStatus] = useState(false);
-    const [url, setUrl] = useState('');
 
     useEffect(() => {
         const fetchProfile = async () => {
@@ -59,8 +58,7 @@ const EditProfile = () => {
 
         if(uploadStatus){
             try{
-                const responseUrl = await avatarUpload(file);
-                updatedFields.avatar = responseUrl;
+                updatedFields.avatar = await avatarUpload(file);
             }catch (e){
                 console.log(e);
             }
@@ -69,10 +67,9 @@ const EditProfile = () => {
 
         if (Object.keys(updatedFields).length > 0) {
             try {
-                await updateProfile(localStorage.getItem("token"), updatedFields);
+                await updateProfile(localStorage.getItem('token'), updatedFields);
                 alert('Profile updated successfully');
                 navigate('/profile');
-
             } catch (e) {
                 alert('Error updating profile');
             }

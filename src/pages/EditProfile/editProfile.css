@@ -28,12 +28,53 @@
     margin-bottom: 10px;
 }
 
+/*------ Edit Avatar ---------*/
+
 .edit-profile-avatar {
+    position: relative;
     display: flex;
-    gap: 25px;
     align-items: center;
+    gap: 35px;
     margin-bottom: 10px;
 }
+
+.edit-profile-span {
+
+}
+
+.edit-profile-image {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    border: 5px solid #674188;
+}
+
+.upload-label {
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.upload-label:hover {
+    transform: scale(1.2);
+    filter: invert(80%) sepia(20%) saturate(400%) hue-rotate(270deg) brightness(100%) contrast(95%);
+}
+
+.upload-image-arrow {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+}
+
+.edit-profile-span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*------ End Edit Avatar ---------*/
 
 .edit-profile-nickname,
 .edit-profile-name,

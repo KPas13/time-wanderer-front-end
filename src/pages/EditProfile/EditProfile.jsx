@@ -4,7 +4,7 @@ import './editProfile.css';
 import Input from "../../components/UI/input/Input";
 import InputEditProfile from "../../components/UI/input/InputEditProfile/InputEditProfile";
 import Button from "../../components/UI/button/Button";
-import {deleteProfile, profile, updateProfile} from "../../actions/user";
+import {avatarUpload, deleteProfile, profile, updateProfile} from "../../actions/user";
 import {useNavigate} from "react-router-dom";
 import ModalWindow from "../../components/UI/modalWindow/ModalWindow";
 
@@ -18,7 +18,10 @@ const EditProfile = () => {
     // const [currentPassword, setCurrentPassword] = useState('');
     // const [newPassword, setNewPassword] = useState('');
     const navigate = useNavigate();
-    const [modalVisible, setModalVisible] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false)
+    const [file, setFile] = useState(null);
+    const [uploadStatus, setUploadStatus] = useState(false);
+    const [url, setUrl] = useState('');
 
     useEffect(() => {
         const fetchProfile = async () => {
@@ -42,12 +45,28 @@ const EditProfile = () => {
         }
     }, [])
 
+    const handleFileChange = (e) => {
+        setFile(e.target.files[0]);
+        setUploadStatus(true);
+    };
+
     const editProfile = async () => {
         const updatedFields = {};
 
         if (nickname !== originalProfile.nickname) updatedFields.nickname = nickname;
         if (name !== originalProfile.name) updatedFields.name = name;
         if (surname !== originalProfile.surname) updatedFields.surname = surname;
+
+        if(uploadStatus){
+            try{
+                const responseUrl = await avatarUpload(file);
+                setUrl(responseUrl);
+            }catch (e){
+                console.log(e);
+            }
+            updatedFields.avatar = url;
+            setUploadStatus(false);
+        }
 
         if (Object.keys(updatedFields).length > 0) {
             try {
@@ -78,7 +97,11 @@ const EditProfile = () => {
             <div className='edit-profile-block'>
                 <div className='edit-profile-avatar'>
                     <span className='edit-profile-span'>Avatar</span>
-                    <img className='edit-profile-image' src={avatar} alt='#'/>
+                    <img className='edit-profile-image' src={avatar} alt='Profile Avatar'/>
+                    <input id='file-upload' type='file' onChange={handleFileChange} style={{display: 'none'}}/>
+                    <label className='upload-label' htmlFor='file-upload'>
+                        <img className='upload-image-arrow' src='/assets/images/down-arrow.png' alt='Upload Avatar'/>
+                    </label>
                 </div>
                 <div className='edit-profile-nickname'>
                     <span className='edit-profile-span'>Nickname</span>
@@ -101,8 +124,8 @@ const EditProfile = () => {
                 {/*    <InputEditProfile placeholder='New Password'/>*/}
                 {/*</div>*/}
                 <div className='edit-profile-btns-block'>
-                    <Button onClick = {() => editProfile()}>Edit Profile</Button>
-                    <Button onClick ={() => setModalVisible(true)}>Delete Profile</Button>
+                    <Button onClick={() => editProfile()}>Edit Profile</Button>
+                    <Button onClick={() => setModalVisible(true)}>Delete Profile</Button>
                 </div>
                 {modalVisible && (
                     <ModalWindow

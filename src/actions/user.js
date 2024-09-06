@@ -70,3 +70,24 @@ export const deleteProfile = async (token) => {
         alert(e);
     }
 }
+
+export const avatarUpload = async (file) => {
+    if (!file) {
+        console.log('Please select a file first!');
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    try {
+        const response = await axios.post('https://time-wanderer-api.vercel.app/upload', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
+        });
+        return response.data.url;
+    } catch (error) {
+        console.error(error);
+    }
+}

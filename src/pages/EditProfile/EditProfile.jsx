@@ -60,11 +60,10 @@ const EditProfile = () => {
         if(uploadStatus){
             try{
                 const responseUrl = await avatarUpload(file);
-                setUrl(responseUrl);
+                updatedFields.avatar = responseUrl;
             }catch (e){
                 console.log(e);
             }
-            updatedFields.avatar = url;
             setUploadStatus(false);
         }
 
